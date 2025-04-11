@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading - Zerodha Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Zerodha</h1>
+        </div>
+        <div class="nav-items">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="index.html" class="nav-link active">Trading</a>
+            <a href="#" class="nav-link">Orders</a>
+            <a href="#" class="nav-link">Funds</a>
+        </div>
+        <div class="user-profile">
+            <span class="user-name">John Doe</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="watchlist">
+            <div class="watchlist-header">
+                <h2>Watchlist</h2>
+                <input type="text" placeholder="Search stocks..." class="search-box">
+            </div>
+            <div class="stock-list">
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <span class="stock-name">RELIANCE</span>
+                        <span class="stock-price">₹2,456.75</span>
+                    </div>
+                    <span class="stock-change positive">+1.25%</span>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <span class="stock-name">TCS</span>
+                        <span class="stock-price">₹3,567.80</span>
+                    </div>
+                    <span class="stock-change negative">-0.75%</span>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <span class="stock-name">HDFC BANK</span>
+                        <span class="stock-price">₹1,678.45</span>
+                    </div>
+                    <span class="stock-change positive">+0.50%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="trading-panel">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2>NIFTY 50</h2>
+                    <span class="current-price">18,245.30</span>
+                    <span class="price-change positive">+125.45 (0.68%)</span>
+                </div>
+                <div class="chart-placeholder">
+                    <!-- Chart will be here -->
+                    Chart View
+                </div>
+            </div>
+            <div class="order-panel">
+                <div class="order-type-selector">
+                    <button class="active">Buy</button>
+                    <button>Sell</button>
+                </div>
+                <div class="order-form">
+                    <input type="text" placeholder="Quantity" class="order-input">
+                    <input type="text" placeholder="Price" class="order-input">
+                    <button class="order-button buy">Place Buy Order</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 
