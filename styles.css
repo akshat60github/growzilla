@@ -1063,3 +1063,130 @@ body.auth-body {
 .auth-container a:hover {
     text-decoration: underline;
 }
+
+/* Landing Page Enhancements */
+.landing-body {
+    margin: 0;
+    background: linear-gradient(135deg, #387ed1, #26a69a);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .landing-hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .landing-content {
+    max-width: 800px;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .landing-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .landing-sub {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+  }
+  
+  .landing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .landing-buttons a {
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+  }
+  
+  /* Features Section */
+  .landing-features {
+    background: white;
+    color: #333;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .feature-box {
+    max-width: 300px;
+  }
+  
+  .feature-box i {
+    font-size: 2.5rem;
+    color: #26a69a;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-box p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  .landing-footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 1s ease forwards;
+  }
+  
+  .animate-slide-up-delay {
+    animation: slideUp 1s ease 0.5s forwards;
+    opacity: 0;
+  }  

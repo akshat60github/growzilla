@@ -1,193 +1,192 @@
 <script>
-    if (localStorage.getItem("isLoggedIn") !== "true") {
-      window.location.href = "login.html";
-    }
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
 </script>
-  
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrowZilla</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowZilla</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>GrowZilla</h1>
-        </div>
-        <div class="nav-items">
-            <a href="home.html" class="nav-link active">Home</a>
-            <a href="dashboard.html" class="nav-link">Dashboard</a>
-            <a href="index.html" class="nav-link">Trading</a>
-            <a href="#" class="nav-link">Orders</a>
-            <a href="#" class="nav-link">Watchlist</a>
-            <a href="#" class="nav-link">News</a>
-            <a href="#" class="nav-link">Funds</a>
-        </div>
-        <div class="user-profile">
-            <i class="fas fa-user-circle"></i>
-            <span class="user-name" id="usernameDisplay">John Doe</span>
-            <button onclick="logout()" class="logout-button">Logout</button>
-        </div>        
-    </nav>
+  <nav class="navbar">
+      <div class="logo">
+          <h1>GrowZilla</h1>
+      </div>
+      <div class="nav-items">
+          <a href="dashboard.html" class="nav-link active">Home</a>
+          <a href="index.html" class="nav-link">Trading</a>
+          <a href="#" class="nav-link">Orders</a>
+          <a href="#" class="nav-link">Watchlist</a>
+          <a href="#" class="nav-link">News</a>
+          <a href="#" class="nav-link">Funds</a>
+      </div>
+      <div class="user-profile">
+          <i class="fas fa-user-circle"></i>
+          <span class="user-name" id="usernameDisplay">John Doe</span>
+          <button onclick="logout()" class="logout-button">Logout</button>
+      </div>        
+  </nav>
 
-    <main class="home-content">
-        <section class="hero-section">
-            <div class="hero-background"></div>
-            <div class="hero-content">
-                <h1 class="animate-text">Your Complete Trading Platform</h1>
-                <p class="animate-text-delay">Trade stocks, track your portfolio, and stay updated with market news - all in one place</p>
-                <div class="hero-buttons animate-text-delay">
-                    <a href="index.html" class="primary-button">
-                        <i class="fas fa-chart-line"></i>
-                        Start Trading
-                    </a>
-                    <a href="dashboard.html" class="secondary-button">
-                        <i class="fas fa-tachometer-alt"></i>
-                        View Dashboard
-                    </a>
-                </div>
-                <div class="hero-stats animate-text-delay">
-                    <div class="stat-item">
-                        <span class="stat-number">4</span>
-                        <span class="stat-label">Active Users</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">₹1000Cr+</span>
-                        <span class="stat-label">Daily Volume</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">4.8★</span>
-                        <span class="stat-label">Rating</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <main class="home-content">
+      <section class="hero-section">
+          <div class="hero-background"></div>
+          <div class="hero-content">
+              <h1 class="animate-text">Your Complete Trading Platform</h1>
+              <p class="animate-text-delay">Trade stocks, track your portfolio, and stay updated with market news - all in one place</p>
+              <div class="hero-buttons animate-text-delay">
+                  <a href="index.html" class="primary-button">
+                      <i class="fas fa-chart-line"></i>
+                      Start Trading
+                  </a>
+                  <a href="dashboard.html" class="secondary-button">
+                      <i class="fas fa-tachometer-alt"></i>
+                      View Dashboard
+                  </a>
+              </div>
+              <div class="hero-stats animate-text-delay">
+                  <div class="stat-item">
+                      <span class="stat-number">4</span>
+                      <span class="stat-label">Active Users</span>
+                  </div>
+                  <div class="stat-divider"></div>
+                  <div class="stat-item">
+                      <span class="stat-number">₹1000Cr+</span>
+                      <span class="stat-label">Daily Volume</span>
+                  </div>
+                  <div class="stat-divider"></div>
+                  <div class="stat-item">
+                      <span class="stat-number">4.8★</span>
+                      <span class="stat-label">Rating</span>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-        <section class="features-section">
-            <h2 class="section-title">Platform Features</h2>
-                <div class="features-grid">
-                    <a href="portfolio.html" class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                        <h3>Portfolio</h3>
-                        <p>Track investments, view gains/losses, and analyze performance with charts.</p>
-                    </a>
-                    <a href="watchlist.html" class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3>Watchlist</h3>
-                        <p>Monitor your favorite stocks with real-time prices and alerts.</p>
-                    </a>
-                    <a href="news.html" class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
-                        <h3>Market News</h3>
-                        <p>Stay updated with the latest market news and stock-specific alerts.</p>
-                    </a>
-                </div>            
-            </div>
-        </section>
+      <section class="features-section">
+          <h2 class="section-title">Platform Features</h2>
+              <div class="features-grid">
+                  <a href="portfolio.html" class="feature-card">
+                      <div class="feature-icon">
+                          <i class="fas fa-chart-pie"></i>
+                      </div>
+                      <h3>Portfolio</h3>
+                      <p>Track investments, view gains/losses, and analyze performance with charts.</p>
+                  </a>
+                  <a href="watchlist.html" class="feature-card">
+                      <div class="feature-icon">
+                          <i class="fas fa-eye"></i>
+                      </div>
+                      <h3>Watchlist</h3>
+                      <p>Monitor your favorite stocks with real-time prices and alerts.</p>
+                  </a>
+                  <a href="news.html" class="feature-card">
+                      <div class="feature-icon">
+                          <i class="fas fa-newspaper"></i>
+                      </div>
+                      <h3>Market News</h3>
+                      <p>Stay updated with the latest market news and stock-specific alerts.</p>
+                  </a>
+              </div>            
+          </div>
+      </section>
 
-        <section class="market-snapshot">
-            <h2 class="section-title">Live Market Snapshot</h2>
-            <div class="snapshot-grid">
-                <div class="market-card">
-                    <div class="market-card-header">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>NIFTY 50</h3>
-                    </div>
-                    <div class="price-info">
-                        <span class="current-value">18,245.30</span>
-                        <span class="change positive">
-                            <i class="fas fa-caret-up"></i>
-                            +125.45 (0.68%)
-                        </span>
-                    </div>
-                </div>
-                <div class="market-card">
-                    <div class="market-card-header">
-                        <i class="fas fa-chart-area"></i>
-                        <h3>SENSEX</h3>
-                    </div>
-                    <div class="price-info">
-                        <span class="current-value">61,795.04</span>
-                        <span class="change positive">
-                            <i class="fas fa-caret-up"></i>
-                            +375.25 (0.61%)
-                        </span>
-                    </div>
-                </div>
-                <div class="market-card">
-                    <div class="market-card-header">
-                        <i class="fas fa-university"></i>
-                        <h3>BANK NIFTY</h3>
-                    </div>
-                    <div class="price-info">
-                        <span class="current-value">42,450.80</span>
-                        <span class="change negative">
-                            <i class="fas fa-caret-down"></i>
-                            -125.30 (0.29%)
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="market-snapshot">
+          <h2 class="section-title">Live Market Snapshot</h2>
+          <div class="snapshot-grid">
+              <div class="market-card">
+                  <div class="market-card-header">
+                      <i class="fas fa-chart-line"></i>
+                      <h3>NIFTY 50</h3>
+                  </div>
+                  <div class="price-info">
+                      <span class="current-value">18,245.30</span>
+                      <span class="change positive">
+                          <i class="fas fa-caret-up"></i>
+                          +125.45 (0.68%)
+                      </span>
+                  </div>
+              </div>
+              <div class="market-card">
+                  <div class="market-card-header">
+                      <i class="fas fa-chart-area"></i>
+                      <h3>SENSEX</h3>
+                  </div>
+                  <div class="price-info">
+                      <span class="current-value">61,795.04</span>
+                      <span class="change positive">
+                          <i class="fas fa-caret-up"></i>
+                          +375.25 (0.61%)
+                      </span>
+                  </div>
+              </div>
+              <div class="market-card">
+                  <div class="market-card-header">
+                      <i class="fas fa-university"></i>
+                      <h3>BANK NIFTY</h3>
+                  </div>
+                  <div class="price-info">
+                      <span class="current-value">42,450.80</span>
+                      <span class="change negative">
+                          <i class="fas fa-caret-down"></i>
+                          -125.30 (0.29%)
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </section>
 
 
-        <section class="cta-section">
-            <div class="cta-background"></div>
-            <div class="cta-content">
-                <h2>Ready to Start Trading?</h2>
-                <p>Join our platform and take control of your investments</p>
-                <a href="index.html" class="primary-button">
-                    <i class="fas fa-rocket"></i>
-                    Open Trading Terminal
-                </a>
-            </div>
-        </section>
-    </main>
+      <section class="cta-section">
+          <div class="cta-background"></div>
+          <div class="cta-content">
+              <h2>Ready to Start Trading?</h2>
+              <p>Join our platform and take control of your investments</p>
+              <a href="index.html" class="primary-button">
+                  <i class="fas fa-rocket"></i>
+                  Open Trading Terminal
+              </a>
+          </div>
+      </section>
+  </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-info">
-                <p>© 2025 Growzilla. All rights reserved.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-    <script>
-        // redirect if not logged in
-        if (localStorage.getItem("isLoggedIn") !== "true") {
-          window.location.href = "login.html";
+  <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-info">
+              <p>© 2025 Growzilla. All rights reserved.</p>
+          </div>
+          <div class="footer-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </footer>
+  <script>
+      // redirect if not logged in
+      if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+      }
+    
+      // display username
+      const user = JSON.parse(localStorage.getItem("user"));
+      if (user && user.username) {
+        const nameElement = document.getElementById("usernameDisplay");
+        if (nameElement) {
+          nameElement.textContent = user.username;
         }
-      
-        // display username
-        const user = JSON.parse(localStorage.getItem("user"));
-        if (user && user.username) {
-          const nameElement = document.getElementById("usernameDisplay");
-          if (nameElement) {
-            nameElement.textContent = user.username;
-          }
-        }
-      
-        // logout function
-        function logout() {
-          localStorage.setItem("isLoggedIn", "false");
-          window.location.href = "login.html";
-        }
-    </script>   
+      }
+    
+      // logout function
+      function logout() {
+        localStorage.setItem("isLoggedIn", "false");
+        window.location.href = "login.html";
+      }
+  </script>   
 </body>
 </html> 
