@@ -985,3 +985,81 @@ a {
 .logout-button:hover {
     background-color: #d93c3c;
 }
+
+
+.auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+body.auth-body {
+    background: linear-gradient(135deg, #387ed1, #26a69a);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.auth-input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s ease;
+}
+
+.auth-input:focus {
+    border-color: #387ed1;
+    outline: none;
+}
+
+.auth-button {
+    padding: 0.75rem;
+    width: 100%;
+    background-color: #387ed1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.auth-button:hover {
+    background-color: #2f6db0;
+}
+
+.auth-container p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.auth-container a {
+    color: #387ed1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
